@@ -1,0 +1,54 @@
+.title {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 50px;
+
+    h5 {
+        margin-top: 15px;
+        color: white;
+    }
+
+    img {
+        height: 50px;
+        margin-right: 25px;
+    }
+}
+
+.image {
+    height: 40em;
+    background-size: cover;
+    width: auto;
+    background-image: url('/assets/images/ground.jpg');
+    background-position: 50% 50%;
+}
+
+
+.card {
+    margin-bottom: 20px;
+}
+
+.bordered {
+    border: 1px solid #cccccc;
+}
+
+.bg-c-blue {
+    background: linear-gradient(45deg, #4099ff, #73b4ff);
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+}
+
+.bg-c-purple {
+    background: linear-gradient(45deg, #8e44ad, #9b59b6);
+}
+
+.bg-c-red {
+    background: linear-gradient(45deg, #f53b57, #ef5777);
+}
+
+.bg-c-orange {
+    background: linear-gradient(45deg, #ffaf40, #ffaf40);
+}
+
+//#3d3d3d

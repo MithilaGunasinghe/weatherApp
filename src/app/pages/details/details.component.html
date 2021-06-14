@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="title">
+            <img src="assets/images/sunny.png" alt="" srcset="">
+            <h5>Weather App</h5>
+        </div>
+    </div>
+    <div class="col-md-8 offset-md-2 ">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <div class="card weather-card bg-c-blue">
+                    <div class="card-body">
+                        <div class="row top">
+                            <span class="material-icons back" routerLink="/">
+                                arrow_back
+                            </span>
+                            <div class="col-md-12 text-center">
+                                <h5>{{city.name}}, {{city.sys.country}}</h5>
+                                <small>9.19 am, Feb 8</small>
+
+                            </div>
+                            <div class="col-md-12 mt-4 mb-2">
+                                <div class="row temp">
+
+                                    <div class="col-md-6 text-right  border-right border-md">
+                                        <p class="mt-3 mb-0">
+                                            <img
+                                                [src]="'http://openweathermap.org/img/wn/'+city['weather'][0]['icon']+'.png'" />
+                                            {{city['weather'][0]['description']}}
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 text-left">
+
+                                        <h1>{{city.main.temp}} °C</h1>
+                                        <p class="m-0">Temp min: {{city.main.temp_max}}°C</p>
+                                        <p class="m-0">Temp max: {{city.main.temp_min}}°C</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row bottom">
+
+                            <div class="col-md-8 offset-md-2">
+
+                                <div class="row ">
+                                    <div class="col-md-4 border-right border-md">
+                                        <p>Pressure: {{city.main.pressure}}hPa</p>
+                                        <p>Humidity: {{city.main.humidity}}%</p>
+                                        <p>Visibility: {{city.sys.visibility}}m</p>
+                                    </div>
+                                    <div class="col-md-4 border-right border-md text-center">
+                                        <span class="material-icons">
+                                            near_me
+                                        </span>
+                                        <p>{{city.wind.speed }}m/s {{city.wind.deg }} Degree</p>
+                                    </div>
+                                    <div class="col-md-4 all-center">
+                                        <p>Sunrise: {{city.sys.sunrise | date:'hh:mm a'}}</p>
+                                        <p>Sunset: {{city.sys.sunset | date:'hh:mm a'}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
