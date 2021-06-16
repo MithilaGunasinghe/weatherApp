@@ -28,8 +28,8 @@
                 <p>{{city.wind.speed }}m/s {{city.wind.deg }} Degree</p>
             </div>
             <div class="col-md-4 all-center">
-                <p>Sunrise: {{city.sys.sunrise | date:'hh:mm a'}}</p>
-                <p>Sunset: {{city.sys.sunset | date:'hh:mm a'}}</p>
+                <p>Sunrise: {{city.sys.sunrise * 1000 | date:'hh:mm a'}}</p>
+                <p>Sunset: {{city.sys.sunset * 1000 | date:'hh:mm a'}}</p>
             </div>
         </div>
     </div>
